@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小众职业博物馆 | 探索不为人知的精彩工作</title>
+    <!-- 链接到我们自己的CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 网站的头部 -->
+    <header>
+        <h1>🏛️ 小众职业博物馆</h1>
+        <p>探索世界上独特而有趣的冷门职业</p>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html" class="active">首页</a>
+        <a href="jobs.html">职业列表</a>
+        <a href="#">投稿分享</a>
+        <a href="#">关于我们</a>
+    </nav>
+
+    <!-- 网站的主内容区 -->
+    <main>
+        <!-- 职业介绍部分 - 我们用几个“卡片”来展示 -->
+        <section class="job-gallery">
+            <!-- 职业卡片 1 -->
+            <div class="job-card">
+                <img src="images/pet-detective.jpg" alt="宠物侦探正在工作" onclick="showDetails(0)">
+                <h3>宠物侦探</h3>
+                <p>专门帮助寻找走失宠物的专业人士，运用追踪技术和社区调查。</p>
+                <button onclick="showDetails(0)">了解更多</button>
+            </div>
+
+            <!-- 职业卡片 2 -->
+            <div class="job-card">
+                <img src="images/food-stylist.jpg" alt="美食造型师在摆放食物" onclick="showDetails(1)">
+                <h3>美食造型师</h3>
+                <p>为广告、菜单和食谱专门美化食物，让它们看起来更诱人。</p>
+                <button onclick="showDetails(1)">了解更多</button>
+            </div>
+
+            <!-- 职业卡片 3 -->
+            <div class="job-card">
+                <img src="images/voice-generator.jpg" alt="AI声音生成师在调试设备" onclick="showDetails(2)">
+                <h3>AI声音生成师</h3>
+                <p>训练和调试AI模型，生成自然、富有情感的人工智能语音。</p>
+                <button onclick="showDetails(2)">了解更多</button>
+            </div>
+
+            <!-- ... 你可以继续添加更多卡片 ... -->
+        </section>
+
+        <!-- 一个弹出的详情模态框，默认隐藏 -->
+        <div id="jobModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <img id="modalImage" src="" alt="">
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 网站的底部 -->
+    <footer>
+        <p>© 2025 小众职业博物馆. 一个Web开发学习项目。</p>
+    </footer>
+
+    <!-- 在页面最后链接到我们的JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
